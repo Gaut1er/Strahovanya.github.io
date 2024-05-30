@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+		<title>Страховая компания</title>
+
+		
+		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="fonts/lineo-icon/style.css" rel="stylesheet" type="text/css">
+
+		
+		<link rel="stylesheet" href="style.css">
+		
+		
+
+	</head>
+	
+
+
+	<body>
+		
+		<div id="site-content">
+			<header class="site-header">
+				<div class="top-header">
+					<div class="container">
+						<a href="index.html" id="branding">
+							<img src="images/logo.png" alt="Company Name" class="logo">
+							<div class="logo-text">
+								<h1 class="site-title"style="color: #0f75bd">Страховая компания</h1>
+								<small class="description">Просто быть уверенным</small>
+							</div>
+						</a> 
+					
+						<div class="right-section pull-right">
+							<a href="#" class="phone"><img src="images/icon-phone.png" class="icon">+1 234 567 8910</a>
+					
+							<form action="#" class="search-form">
+								<input type="text" placeholder="Поиск...">
+								<button type="submit"><img src="images/icon-search.png" alt=""></button>
+							</form>
+						</div>
+					</div> 
+				</div> 
+				
+				<div class="bottom-header">
+					<div class="container">
+						<div class="main-navigation">
+							<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+							<ul class="menu">
+								<li class="menu-item"><a href="about.html">О нас</a></li>
+								<li class="menu-item"><a href="insurance.html">Планы страхования</a></li>
+								<li class="menu-item"><a href="resource.html">Подробная информация</a></li>
+								<li class="menu-item current-menu-item"><a href="reges.html">Личный кабинет</a></li>
+								<li class="menu-item "><a href="contact.html">Контакты</a></li>
+							</ul> 
+						</div> 
+						
+						<div class="social-links">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-pinterest"></i></a>
+						</div>
+						
+						<div class="mobile-navigation"></div>
+					</div>
+				</div>
+				
+				
+			</header> 
+
+			<main class="main-content">
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="index.html">Главная</a>
+						<span>Личный кабинет</span>
+					</div>
+				</div>
+				
+			
+				<head>
+					<div class="pagination">
+						<a href="#"></a>
+					<div class="main-calc" style="background-color: #0f75bd;padding-top: 30px;padding-bottom: 30px;margin: auto;border-radius: 10px;">	
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					
+					<title>Авторизация и профиль</title>
+					</head>
+					<body>
+					<div id="loginForm">
+						<style>
+							h1 {
+								color: #ffffff;
+							}
+						</style>
+						<h1>Авторизация</h1>
+						<h2><input type="text" id="Никита"  placeholder="Логин"></h2>
+						<h2><input type="password" id="123" placeholder="Пароль"></h2>
+						<h2><button  onclick="login()">Войти</button></h2>
+					</div>
+					<style>
+						#profile {color: #ffffff; }
+					</style>
+					
+					<div id="profile" style="display: none;">
+						<h2 id="welcomeMsg"></h2>
+						
+						<h2><label for="fullName">Фамилия:</label><br>
+						<input type="text" id="fullName" name="fullName"><br>
+						<label for="fullName">Имя:</label><br>
+						<input type="text" id="fullName" name="fullName"><br>
+						<label for="fullName">Отчество:</label><br>
+						<input type="text" id="fullName" name="fullName"><br>
+						<label for="fullName">Паспорт:</label><br>
+						<input type="text" id="Document" name="Document"><br>
+						<label for="email">Почта:</label><br>
+						<input type="email" id="email" name="email"><br>
+						<label for="bio">Номер телефона:</label><br>
+						<input type="text" id="bio" name="bio"></textarea><br><br>
+						<button onclick="saveProfile()">Сохранить</button>
+						<button onclick="logout()">Выйти</button></h2>
+						
+					</div>
+
+					<script>
+					function login() {
+						const username = document.getElementById('Никита').value;
+						const password = document.getElementById('123').value;
+
+						
+						if (username === 'Никита' && password === '123') {
+							document.getElementById('loginForm').style.display = 'none';
+							document.getElementById('profile').style.display = 'block';
+							document.getElementById('usernameDisplay').innerText = username;
+						} else {
+							alert('Неправильный логин или пароль. Попробуйте еще раз.');
+						}
+					}
+
+					function logout() {
+						document.getElementById('loginForm').style.display = 'block';
+						document.getElementById('profile').style.display = 'none';
+						document.getElementById('username').value = '';
+						document.getElementById('password').value = '';
+						
+					}
+					
+					</script>
+					</body>
+					
+							</div>
+						</div>
+					</div>
+				</div> 
+			</main>
+		
+			<div class="site-footer">
+				<div class="widget-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<div class="widget">
+									<h3 class="widget-title"></h3>
+									<address> 
+									</address>
+									<a href="#"></a>
+									<a href="mailto:info@prosto.com"></a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<div class="widget">
+									<h3 class="widget-title">Контакты</h3>
+									<ul class="no-bullet">
+										<li><a href="#">Название компании Просто быть уверенным.Russia Moscow </a></li>
+										<li><a href="#">Телефон: +1 234 567 8910</a></li>
+										<li><a href="#">info@prosto.com</a></li>
+										
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<div class="widget">
+									<h3 class="widget-title">Компания</h3>
+									<ul class="no-bullet">
+										<li><a href="#">О нас</a></li>
+										<li><a href="#">Информационная линия</a></li>
+										<li><a href="#">Команда</a></li>
+										<li><a href="#">Присоединяйтесь к нам</a></li>
+										<li><a href="#">Сотрудничество</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<div class="widget">
+									<h3 class="widget-title">Продукты</h3>
+									<ul class="no-bullet">
+										<li><a href="#">Страхование жизни</a></li>
+										<li><a href="#">Страхование жилья</a></li>
+										<li><a href="#">Страхование автомобиля</a></li>
+										<li><a href="#">Страхование бизнеса</a></li>
+										<li><a href="#">Страхование инвестиций</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<div class="widget">
+									<h3 class="widget-title">Пресс-центр</h3>
+									<ul class="no-bullet">
+									<li><a href="#">Реклама</a></li>
+									<li><a href="#">Интервью</a></li>
+									<li><a href="#">Горячие новости</a></li>
+									<li><a href="#">Фото</a></li>
+									<li><a href="#">Маркетинг</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom-footer">
+					<div class="container">
+						<nav class="footer-navigation">
+							<a href="#">Главная</a>
+							<a href="#">О нас</a>
+							<a href="#">Планы страхования</a>
+							<a href="#">Подробная информация</a>
+							<a href="#">Личный кабинет</a>
+							<a href="#">Контакты</a>
+						</nav>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>
